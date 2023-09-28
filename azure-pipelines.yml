@@ -14,14 +14,9 @@ steps:
   displayName: 'Run a one-line script'
 - task: HCLAppScanOnCloud@2
   inputs:
-    AppSecTestService: 'TestHCL'
-    applications: 'e6130149-b9ce-4612-904c-a62f540a7341'
-    scanname: 'twest'
+    AppSecTestService: 'HCL-APPSCAN'
+    applications: '3ecd923b-b37b-4718-8411-110575046490'
+    scanname: 'devops-scan'
     scantype: 'static'
     scanloc: '.'
-    scanMethod: 'IRX'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    scanMethod: 'IRXless'
