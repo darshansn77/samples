@@ -12,11 +12,12 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+
 - task: HCLAppScanOnCloud@2
   inputs:
     AppSecTestService: 'HCL-APPSCAN'
-    applications: '3ecd923b-b37b-4718-8411-110575046490'
-    scanname: 'devops-scan'
+    applications: '9de97e21-6ecc-468a-8fbc-770a8ca97fac'
+    scanname: 'Devops-scan'
     scantype: 'static'
     scanloc: '.'
     scanMethod: 'IRXless'
